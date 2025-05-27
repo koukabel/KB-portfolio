@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+    - main
+    - dev
+
+jobs:
+
+  build-and-push:
+    name: Build and Push on Dockerhub
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/build-push-action@v6.17.0
+        with:
+          push: true
+          tags: portfolio/front:latest
+
+
+        
+          
