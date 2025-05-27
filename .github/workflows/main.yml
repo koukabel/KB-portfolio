@@ -14,7 +14,8 @@ jobs:
       - uses: docker/build-push-action@v6.17.0
         with:
           push: true
-          tags: portfolio/front:latest
+          tags: ghcr.io/${{ github.repository_owner }}/portfolio/front:latest
+
 
 
         
