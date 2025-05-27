@@ -47,7 +47,7 @@ const Projects = () => {
             <p className="animatedText text-black-200">{currentProject.subdesc}</p>
           </div>
 
-          <div className="flex items-center justify-between flex-wrap gap-5">
+          <div className="flex items-center justify-between flex-wrap gap-8">
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
                 <div key={index} className="tech-logo">
@@ -55,7 +55,7 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-            <div className="flex items-center justify-around flex-wrap gap-5">
+            <div className="flex items-center justify-around flex-wrap gap-7 mt-2">
               <a
                 className="flex items-center gap-2 cursor-pointer text-black-200 "
                 href={currentProject.liveSource}

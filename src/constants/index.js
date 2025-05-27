@@ -13,7 +13,6 @@ import {
   nextjs,
   nodejs,
   react,
-  graphql,
   redux,
   sass,
   tailwindcss,
@@ -226,18 +225,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'wp',
+        path: '/assets/icons/wp.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'cSS',
+        path: 'assets/icons/css.svg',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'js',
+        path: '/assets/icons/javascript.svg',
       },
     ],
     sourceCode: "", 
