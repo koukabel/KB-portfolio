@@ -262,6 +262,9 @@ body {
   transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
 
+.hero-text {
+  margin-top: 4rem;;
+}
 @media screen and (max-width: 440px) {
   .terminal-img {
     object-fit: none;
@@ -273,4 +276,7 @@ body {
      margin-top: 3rem;
      
   }
+  .hero-text {
+  margin-top: 7rem;;
+}
 }

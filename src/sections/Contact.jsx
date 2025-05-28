@@ -5,7 +5,6 @@ import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
 
 const Contact = () => {
-
   const formRef = useRef();
 
   const { alert, showAlert, hideAlert } = useAlert();
@@ -63,6 +62,7 @@ const Contact = () => {
           });
         },
       );
+    console.log(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   };
 
   return (
@@ -70,7 +70,11 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen terminal-img" />
+        <img
+          src="./assets/terminal.png"
+          alt="terminal-bg"
+          className="absolute inset-0 min-h-screen terminal-img"
+        />
 
         <div className="contact-container">
           <h3 className="sm:text-4xl text-3xl font-semibold text-white font-generalsans">Let’s talk</h3>

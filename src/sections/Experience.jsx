@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
@@ -21,17 +20,11 @@ const WorkExperience = () => {
 
               <Suspense fallback={<CanvasLoader />}>
                 <group rotation={[2, Math.PI, 3.1]}>
-                  {/* Rotates the whole model 180° to face camera */}
                   <Developer position={[0, -1, 0]} scale={1.3} />
                 </group>
               </Suspense>
 
-              <OrbitControls
-                target={[0, 0.5, 0]} // Looks at chest/head height
-                enableZoom={false}
-                minPolarAngle={Math.PI / 2.2} // ≈ 45°
-                maxPolarAngle={Math.PI / 3} // ≈ 86°, avoids top view
-              />
+              
             </Canvas>
           </div>
 

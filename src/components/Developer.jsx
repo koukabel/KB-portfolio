@@ -11,7 +11,7 @@ const Developer = (props) => {
   // Load model
   const { scene } = useGLTF('/models/animations/girl.glb');
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
-  useGraph(clone); // Needed to parse the scene, even if you don’t use nodes/materials
+  useGraph(clone); 
   const { nodes, materials } = useGraph(clone);
   const wave = useFBX('/models/animations/Wave.fbx');
   const salute = useFBX('/models/animations/Salute.fbx');
@@ -64,7 +64,7 @@ const Developer = (props) => {
     return () => {
       clearTimeout(timeout);
       if (currentAction) {
-        currentAction.stop(); // Stop immediately instead of fading
+        currentAction.stop(); 
       }
     };
   }, [currentAnimationIndex, animations, actions]);
