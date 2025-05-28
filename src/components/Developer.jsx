@@ -13,9 +13,9 @@ const Developer = (props) => {
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
   useGraph(clone); 
   const { nodes, materials } = useGraph(clone);
-  const wave = useFBX('/models/animations/Wave.fbx');
-  const salute = useFBX('/models/animations/Salute.fbx');
-  const dance = useFBX('/models/animations/dance.fbx');
+  const wave = useFBX('models/animations/Wave.fbx');
+  const salute = useFBX('models/animations/Salute.fbx');
+  const dance = useFBX('models/animations/dance.fbx');
 
   const animations = useMemo(() => {
     const clips = [];
@@ -132,6 +132,6 @@ const Developer = (props) => {
   );
 };
 
-useGLTF.preload('/models/animations/girl.glb');
+useGLTF.preload('models/animations/girl.glb');
 
 export default Developer;

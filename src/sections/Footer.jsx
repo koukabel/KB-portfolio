@@ -14,7 +14,7 @@ const Footer = () => {
               href="https://github.com/koukabel"
               target="_blank"
               rel="noreferrer">
-          <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
+          <img src="assets/github.svg" alt="github" className="w-1/2 h-1/2" />
           </a>
         </div>
         
@@ -25,7 +25,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/khouloud-belkhir/"
             target="_blank"
             rel="noreferrer">
-          <img src="/assets/icons/linkedin.png" alt="instagram" className="w-1/2 h-1/2" />
+          <img src="assets/icons/linkedin.png" alt="instagram" className="w-1/2 h-1/2" />
           </a>
         </div>
       </div>

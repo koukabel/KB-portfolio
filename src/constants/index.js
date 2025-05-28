@@ -165,7 +165,7 @@ export const myProjects = [
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Ckakra UI, TypeScript, PostgresQL and Docker, Luxelair is designed for optimal performance and scalability. The app is hosted on infinity free. The backend is powered by PostgreSQL, providing a robust and secure database solution. Docker is used for containerization, making deployment and management of the application easier and more efficient.',
     href: 'https://www.google.com',
-    texture: '/textures/project/luxelair.mp4',
+    texture: 'textures/project/luxelair.mp4',
     logo: 'assets/icons/logo_white.png',
     logoStyle: {
       backgroundColor: 'white',
@@ -214,7 +214,7 @@ export const myProjects = [
     subdesc:
       "The site is designed to be visually appealing and easy to navigate, with a focus on showcasing the designer's skills and creativity. The website includes a portfolio section, where visitors can view the designer's work, as well as an about section that provides information about the designer and his background.",
     href: 'https://www.google.com',
-    texture: '/textures/project/Geppetto.mp4',
+    texture: 'textures/project/Geppetto.mp4',
     logo: 'assets/project-logo2.png',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -248,7 +248,7 @@ export const myProjects = [
     subdesc:
       'The game features a grid of cards that are face down, and players take turns flipping over two cards at a time to try to find matching pairs. If the cards match, they remain face up, and if they do not match, they are flipped back over. The game continues until all pairs have been matched.',
     href: 'https://www.google.com',
-    texture: '/textures/project/memory.mp4',
+    texture: 'textures/project/memory.mp4',
     logo: 'assets/project-logo3.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
