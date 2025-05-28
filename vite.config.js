@@ -8,7 +8,7 @@ export default ({ mode }) => {
  
 // https://vitejs.dev/config/
 return defineConfig({
-  base:  env.VITE_BASE_PATH || '/',
+  base:  env.VITE_BASE_PATH || './',
   plugins: [react()],
 });
 };

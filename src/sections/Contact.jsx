@@ -25,11 +25,12 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: 'Khouloud Belkhir',
-          from_email: form.email,
-          to_email: 'belkhirkhouloud@gmail.com',
-          message: form.message,
+        from_name: form.name,
+        to_name: 'Khouloud Belkhir',
+        from_email: form.email, // visitor's email
+        to_email: 'belkhirkhouloud@gmail.com', // your email
+        message: form.message,
+        reply_to: form.email, // THIS IS CRUCIAL FOR REPLIES
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
@@ -71,7 +72,7 @@ const Contact = () => {
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
-          src="./assets/terminal.png"
+          src="/assets/terminal.png"
           alt="terminal-bg"
           className="absolute inset-0 min-h-screen terminal-img"
         />

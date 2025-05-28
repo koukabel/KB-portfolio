@@ -36,7 +36,6 @@ const Developer = (props) => {
   }, [wave, dance, salute]);
 
   const { actions } = useAnimations(animations, group);
-  console.log('actions', actions);
 
   useEffect(() => {
     if (!actions || animations.length === 0) return;
