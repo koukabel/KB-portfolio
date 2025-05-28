@@ -63,7 +63,7 @@ const Projects = () => {
                 rel="noreferrer">
                 <p className="text-green-700 font-semibold">Check Live Site</p>
 
-                <img src="/assets/icons/arrowUp.png" alt="arrow" className="w-4 h-4 arrow_project" />
+                <img src="assets/icons/arrowUp.png" alt="arrow" className="w-4 h-4 arrow_project" />
               </a>
               <a
                 className="flex items-center gap-2 cursor-pointer text-black-200 "
@@ -72,18 +72,18 @@ const Projects = () => {
                 rel="noreferrer">
                 <p className="text-green-700 font-semibold">Check source code</p>
 
-                <img src="/assets/icons/arrowUp.png" alt="arrow" className="w-4 h-4 arrow_project" />
+                <img src="assets/icons/arrowUp.png" alt="arrow" className="w-4 h-4 arrow_project" />
               </a>
             </div>
           </div>
 
           <div className="flex justify-between items-center mt-7">
             <button className="arrow-btn bg-black-100" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/left-arrow.png" alt="left arrow" />
+              <img src="assets/left-arrow.png" alt="left arrow" />
             </button>
 
             <button className="arrow-btn bg-black-100" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4 " />
+              <img src="assets/right-arrow.png" alt="right arrow" className="w-4 h-4 " />
             </button>
           </div>
         </div>

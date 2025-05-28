@@ -166,7 +166,7 @@ export const myProjects = [
       'Built as a unique Software-as-a-Service app with Next.js 14, Ckakra UI, TypeScript, PostgresQL and Docker, Luxelair is designed for optimal performance and scalability. The app is hosted on infinity free. The backend is powered by PostgreSQL, providing a robust and secure database solution. Docker is used for containerization, making deployment and management of the application easier and more efficient.',
     href: 'https://www.google.com',
     texture: '/textures/project/luxelair.mp4',
-    logo: '/assets/icons/logo_white.png',
+    logo: 'assets/icons/logo_white.png',
     logoStyle: {
       backgroundColor: 'white',
       border: '0.2px solid #36201D',
@@ -177,7 +177,7 @@ export const myProjects = [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: 'assets/react.svg',
       },
       {
         id: 2,
@@ -187,22 +187,22 @@ export const myProjects = [
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: 'assets/typescript.png',
       },
       {
         id: 4,
         name: 'Next.js',
-        path: '/assets/icons/nextjs.svg',
+        path: 'assets/icons/nextjs.svg',
       },
       {
         id: 4,
         name: 'docker',
-        path: '/assets/icons/docker.png',
+        path: 'assets/icons/docker.png',
       },
       {
         id: 5,
         name: 'redis',
-        path: '/assets/icons/redis.png',
+        path: 'assets/icons/redis.png',
       },
     ],
     sourceCode: "https://github.com/koukabel/luxelair", 
@@ -215,18 +215,18 @@ export const myProjects = [
       "The site is designed to be visually appealing and easy to navigate, with a focus on showcasing the designer's skills and creativity. The website includes a portfolio section, where visitors can view the designer's work, as well as an about section that provides information about the designer and his background.",
     href: 'https://www.google.com',
     texture: '/textures/project/Geppetto.mp4',
-    logo: '/assets/project-logo2.png',
+    logo: 'assets/project-logo2.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: 'assets/spotlight2.png',
     tags: [
       {
         id: 1,
         name: 'wp',
-        path: '/assets/icons/wp.png',
+        path: 'assets/icons/wp.png',
       },
       {
         id: 2,
@@ -236,7 +236,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'js',
-        path: '/assets/icons/javascript.svg',
+        path: 'assets/icons/javascript.svg',
       },
     ],
     sourceCode: "", 
@@ -249,7 +249,7 @@ export const myProjects = [
       'The game features a grid of cards that are face down, and players take turns flipping over two cards at a time to try to find matching pairs. If the cards match, they remain face up, and if they do not match, they are flipped back over. The game continues until all pairs have been matched.',
     href: 'https://www.google.com',
     texture: '/textures/project/memory.mp4',
-    logo: '/assets/project-logo3.png',
+    logo: 'assets/project-logo3.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -257,12 +257,12 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: 'assets/spotlight3.png',
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: 'assets/react.svg',
       },
       {
         id: 2,
@@ -272,7 +272,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: 'assets/typescript.png',
       },
     ],
   sourceCode: "https://github.com/koukabel/2023-02-JS-Lille-project-2-groupe2", 
@@ -299,7 +299,7 @@ export const workExperiences = [
     duration: 'Sep 2024 - March 2025',
     title:
       'Successfully migrated an existing PHP website to WordPress while preserving all functionality and improving maintainability. Built a WordPress theme from scratch following best practices for performance and scalability. Implemented advanced user experience features to enhance engagement and conversion rates. Deployed and managed the website on OVH Cloud infrastructure for optimal performance.',
-    icon: '/assets/icons/wp.png',
+    icon: 'assets/icons/wp.png',
   },
   {
     id: 2,
@@ -308,7 +308,7 @@ export const workExperiences = [
     duration: '2023 - 2024',
     title:
       'Built client-facing interface for internal tool.Designed relational database architecture. Developed Stripe payment integration component.Deployed application to testing environment.',
-    icon: '/assets/icons/vue.png',
+    icon: 'assets/icons/vue.png',
   },
   {
     id: 3,
@@ -317,6 +317,6 @@ export const workExperiences = [
     duration: 'Jan 2021 - Jan 2023',
     title:
       'Led documentation initiative using Docusaurus framework.Contributed to Design System enhancements and component library.Developed user-facing features to optimize UX workflows.Created test suites (Cypress + unit tests).Implemented CI/CD pipelines for automated testing and deployment.Participating in code reviews and providing constructive feedback to other developers.',
-    icon: '/assets/react.svg',
+    icon: 'assets/react.svg',
   },
 ];
