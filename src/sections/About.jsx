@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Globe from 'react-globe.gl';
-
+import * as THREE from 'three';
 import Button from '../components/Button.jsx';
 import { skills } from '../constants';
 const About = () => {
@@ -17,32 +17,51 @@ const About = () => {
     }, 2000);
   };
 
+ useEffect(() => {
+ 
+  const N = 30;
+  const newCloudsData = [...Array(N).keys()].map(() => ({
+    lat: (Math.random() - 0.5) * 180,
+    lng: (Math.random() - 0.5) * 360,
+    radius: Math.random() * 5 + 3,
+  }));
+  setCloudsData(newCloudsData);
 
-  useEffect(() => {
-    // Generate random cloud data
-    const N = 30;
-    const newCloudsData = [...Array(N).keys()].map(() => ({
-      lat: (Math.random() - 0.5) * 180,
-      lng: (Math.random() - 0.5) * 360,
-      radius: Math.random() * 5 + 3,
-    }));
-    setCloudsData(newCloudsData);
+  // Auto-rotate the globe and disable zoom
+  let animationFrameId;
+  const rotateGlobe = () => {
+    if (globeRef.current) {
+      const controls = globeRef.current.controls();
+      
+     
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 1.5;
+      
+    
+      controls.enableZoom = false;
+      controls.enablePan = false; 
+      
+ 
+      controls.mouseButtons = {
+        LEFT: THREE.MOUSE.ROTATE,
+        MIDDLE: THREE.MOUSE.DOLLY, 
+        RIGHT: THREE.MOUSE.NONE    
+      };
+      
+      
+      controls.touches = {
+        ONE: THREE.TOUCH.ROTATE,
+        TWO: THREE.TOUCH.DOLLY_PAN 
+      };
+    }
+    animationFrameId = requestAnimationFrame(rotateGlobe);
+  };
+  rotateGlobe();
 
-    // Auto-rotate the globe
-    let animationFrameId;
-    const rotateGlobe = () => {
-      if (globeRef.current) {
-        globeRef.current.controls().autoRotate = true;
-        globeRef.current.controls().autoRotateSpeed = 1.5; // Adjust speed (default: 1)
-      }
-      animationFrameId = requestAnimationFrame(rotateGlobe);
-    };
-    rotateGlobe();
-
-    return () => {
-      cancelAnimationFrame(animationFrameId); // Cleanup
-    };
-  }, []);
+  return () => {
+    cancelAnimationFrame(animationFrameId); 
+  };
+}, []);
 
   return (
     <section className="c-space my-20" id="about">
@@ -69,7 +88,6 @@ const About = () => {
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-
               <Globe
                 ref={globeRef}
                 height={400}
@@ -83,7 +101,7 @@ const About = () => {
                 cloudPointColor={() => 'rgba(255, 255, 255, 0.8)'}
                 cloudPointRadius={0.5}
                 cloudPoints={10000}
-                enablePointerInteraction={false} 
+                enablePointerInteraction={false}
               />
             </div>
             <div>
@@ -108,9 +126,9 @@ const About = () => {
                 </p>
               </div>
               <div className="py-10 flex flex-col">
-                <div className="mt-16 flex flex-wrap gap-8">
+                <div className="mt-16 flex flex-wrap skills_icons">
                   {skills.map((skill) => (
-                    <div className="block-container w-20 h-20" key={skill.name}>
+                    <div className="block-container w-16 h-16" key={skill.name}>
                       <div className=" rounded-xl" />
                       <div className="btn-front rounded-xl flex justify-center items-center">
                         <img src={skill.imageUrl} alt={skill.name} className="w-1/2 h-1/2 object-contain" />

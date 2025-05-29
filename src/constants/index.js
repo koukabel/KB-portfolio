@@ -14,7 +14,6 @@ import {
   nodejs,
   react,
   redux,
-  sass,
   tailwindcss,
   typescript,
   wp,
@@ -131,11 +130,7 @@ export const skills = [
     name: 'Redux',
     type: 'State Management',
   },
-  {
-    imageUrl: sass,
-    name: 'Sass',
-    type: 'Frontend',
-  },
+  
   {
     imageUrl: tailwindcss,
     name: 'Tailwind CSS',

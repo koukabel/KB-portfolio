@@ -13,7 +13,7 @@ import nextjs from './nextjs.svg';
 import nodejs from './nodejs.svg';
 import react from './react.svg';
 import redux from './redux.svg';
-import sass from './sass.svg';
+
 import tailwindcss from './tailwindcss.svg';
 import typescript from './typescript.svg';
 import estate from './estate.svg';
@@ -41,7 +41,6 @@ export {
   react,
   vue,
   redux,
-  sass,
   confluence,
   tailwindcss,
   typescript,
