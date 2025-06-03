@@ -201,7 +201,7 @@ export const myProjects = [
       },
     ],
     sourceCode: "https://github.com/koukabel/luxelair", 
-    liveSource:""
+    liveSource:"https://home.beltodev.org/luxelair/"
   },
   {
     title: 'Studio Geppetto - Live',
@@ -270,7 +270,7 @@ export const myProjects = [
         path: 'assets/typescript.png',
       },
     ],
-  sourceCode: "https://github.com/koukabel/2023-02-JS-Lille-project-2-groupe2", 
+  sourceCode: "https://github.com/koukabel/mashup-game", 
   liveSource:""
   },
 ];

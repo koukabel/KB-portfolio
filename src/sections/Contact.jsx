@@ -32,7 +32,7 @@ const Contact = () => {
         message: form.message,
         reply_to: form.email, 
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        "140AQpV5B3zcci758",
       )
       .then(
         () => {
