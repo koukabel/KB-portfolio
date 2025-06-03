@@ -280,8 +280,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
     cubePosition: isSmall ? [3, -6, 1] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-28, 7, 0],
+    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 2, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-22, 7, 0],
     targetPosition: isSmall ? [-5, -10, -15] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
   };
 };
@@ -302,7 +302,7 @@ export const workExperiences = [
     pos: 'Norauto',
     duration: '2023 - 2024',
     title:
-      'Built client-facing interface for internal tool.Designed relational database architecture. Developed Stripe payment integration component.Deployed application to testing environment.',
+      'Built client-facing interface for internal tool. Designed relational database architecture. Developed Stripe payment integration component. Deployed application to testing environment.',
     icon: 'assets/icons/vue.png',
   },
   {
@@ -311,7 +311,7 @@ export const workExperiences = [
     pos: 'CAC 40',
     duration: 'Jan 2021 - Jan 2023',
     title:
-      'Led documentation initiative using Docusaurus framework.Contributed to Design System enhancements and component library.Developed user-facing features to optimize UX workflows.Created test suites (Cypress + unit tests).Implemented CI/CD pipelines for automated testing and deployment.Participating in code reviews and providing constructive feedback to other developers.',
+      'Led documentation initiative using Docusaurus framework.Contributed to Design System enhancements and component library. Developed user-facing features to optimize UX workflows. Created test suites (Cypress + unit tests).Implemented CI/CD pipelines for automated testing and deployment. Participating in code reviews and providing constructive feedback to other developers.',
     icon: 'assets/react.svg',
   },
 ];
