@@ -12,7 +12,7 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience</p>
 
         <div className="work-container">
-          <div className="work-canvas">
+          <div className="work-canvas sm:py-10 py-5 sm:px-5 px-2.5">
             <Canvas camera={{ position: [0, 2, 5], fov: 35 }} className='khouloud-canvas'>
               <ambientLight intensity={1} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -20,7 +20,7 @@ const WorkExperience = () => {
 
               <Suspense fallback={<CanvasLoader />}>
                 <group rotation={[2, Math.PI, 3.1]}>
-                  <Developer position={[0, -1, 0]} scale={1.3} />
+                  <Developer position={[0.1, -1, -0.4]} scale={1.4} />
                 </group>
               </Suspense>
 
