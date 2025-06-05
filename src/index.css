@@ -112,6 +112,7 @@ body {
   .work-canvas {
     @apply col-span-1 rounded-lg bg-black-200 border border-gray-500;
     background-color: #b3b5ba80;
+
   }
 
   .work-content_container:hover {
@@ -154,8 +155,8 @@ body {
   /* contact section */
   .contact-container {
     @apply max-w-xl relative z-10 sm:px-10 px-5;
-    margin-top: 9rem;
-
+    margin-top: 7rem;
+    margin-bottom: 1rem
   }
 
 
@@ -299,6 +300,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+ .work-canvas {
+  margin-right: 15px;
+ }
+}
+
+@media screen and (max-width: 1024px) {
+ .work-canvas {
+  margin-right: 0px;
+  margin-bottom: 30px;
+ }
+}
+
 @media screen and (max-width: 440px) {
   .terminal-img {
     object-fit: none;

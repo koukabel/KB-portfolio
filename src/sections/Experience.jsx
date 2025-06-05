@@ -12,7 +12,7 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience</p>
 
         <div className="work-container">
-          <div className="work-canvas sm:py-10 py-5 sm:px-5 px-2.5">
+          <div className="work-canvas">
             <Canvas camera={{ position: [0, 2, 5], fov: 35 }} className='khouloud-canvas'>
               <ambientLight intensity={1} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />

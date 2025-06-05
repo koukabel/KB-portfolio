@@ -71,7 +71,7 @@ const About = () => {
             <img
               src="assets/photo pro.jpeg"
               alt="grid-1"
-              className="w-full sm:h-[276px] h-fit object-contain rounded-2xl"
+              className="w-full h-fit object-contain rounded-2xl"
             />
 
             <div>
