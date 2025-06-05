@@ -116,13 +116,12 @@ const About = () => {
 
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            {/* <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" /> */}
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <div className="mt-10 flex flex-wrap gap-12">
-                <p className="grid-subtext">
-                  I specialize in a variety of languages, frameworks, and tools that allow me to build robust and
-                  scalable applications
+              
+              <div className="mt-10 flex flex-wrap gap-10">
+                <p className="grid-headtext">Tech Stack</p>
+                <p className="grid-subtext skills_desc">
+                 I specialize in a wide range of programming languages, frameworks, and development tools that empower me to build robust, scalable, and high-performance applications. With a deep understanding of both front-end and back-end technologies, I am capable of creating seamless user experiences and optimizing server-side functionality. 
                 </p>
               </div>
               <div className="py-10 flex flex-col">

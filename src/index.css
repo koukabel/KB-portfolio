@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
@@ -300,22 +300,31 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (min-width: 1024px) {
- .work-canvas {
-  margin-right: 15px;
- }
+  .work-canvas {
+    margin-right: 15px;
+  }
+
+  .skills_desc {
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 1024px) {
- .work-canvas {
-  margin-right: 0px;
-  margin-bottom: 30px;
- }
+  .work-canvas {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+   .skills_desc {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 440px) {
   .terminal-img {
     object-fit: none;
+     height: 100%;
     border-radius: 0.5rem;
   }
 
@@ -358,12 +367,13 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-      .contact-container {
-        margin-top: 2.5rem;
-    }
-    .terminal-img {
+  .contact-container {
+    margin-top: 2.5rem;
+  }
+
+  .terminal-img {
     object-fit: none;
-    height: 100%; 
+    height: 100%;
     border-radius: 0.5rem;
   }
 
@@ -371,9 +381,9 @@ body {
     padding: 1rem;
   }
 
-      .inner-nav {
-        padding-left: 1.5rem;
-        padding-right: 2rem;
-    }
+  .inner-nav {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
 
 }
