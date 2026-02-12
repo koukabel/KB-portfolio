@@ -288,6 +288,15 @@ export const calculateSizes = (isMini, isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: 'OVHcloud',
+    pos: 'Support IT Web',
+    duration: 'Nov 2025 - Feb 2026',
+    title:
+      'Gained hands-on experience in technical IT support, managing tickets, diagnosing issues, and guiding clients through problem resolution. Collaborated with internal teams to ensure efficient incident handling, while developing strong communication and analytical skills. Motivated to apply technical expertise in a cloud-focused environment.',
+    icon: 'assets/icons/ovh.png',
+  },
+  {
+    id: 1,
     name: 'Sudio Geppetto',
     pos: 'Wordpress Developer',
     duration: 'Sep 2024 - March 2025',
@@ -302,15 +311,6 @@ export const workExperiences = [
     duration: '2023 - 2024',
     title:
       'Built client-facing interface for internal tool. Designed relational database architecture. Developed Stripe payment integration component. Deployed application to testing environment.',
-    icon: 'assets/icons/vue.png',
-  },
-  {
-    id: 3,
-    name: 'React | Node Developer',
-    pos: 'CAC 40',
-    duration: 'Jan 2021 - Jan 2023',
-    title:
-      'Led documentation initiative using Docusaurus framework.Contributed to Design System enhancements and component library. Developed user-facing features to optimize UX workflows. Created test suites (Cypress + unit tests).Implemented CI/CD pipelines for automated testing and deployment. Participating in code reviews and providing constructive feedback to other developers.',
-    icon: 'assets/react.svg',
-  },
+    icon: 'assets/icons/no.png',
+  }
 ];
