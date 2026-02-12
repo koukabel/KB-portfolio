@@ -125,22 +125,22 @@ export const skills = [
     name: 'Vue',
     type: 'Frontend',
   },
-  {
-    imageUrl: redux,
-    name: 'Redux',
-    type: 'State Management',
-  },
+  // {
+  //   imageUrl: redux,
+  //   name: 'Redux',
+  //   type: 'State Management',
+  // },
   
   {
     imageUrl: tailwindcss,
     name: 'Tailwind CSS',
     type: 'Frontend',
   },
-  {
-    imageUrl: chakra,
-    name: 'chakra UI',
-    type: 'Frontend',
-  },
+  // {
+  //   imageUrl: chakra,
+  //   name: 'chakra UI',
+  //   type: 'Frontend',
+  // },
   {
     imageUrl: wp,
     name: 'wp',
@@ -244,11 +244,10 @@ export const myProjects = [
       'The game features a grid of cards that are face down, and players take turns flipping over two cards at a time to try to find matching pairs. If the cards match, they remain face up, and if they do not match, they are flipped back over. The game continues until all pairs have been matched.',
     href: 'https://www.google.com',
     texture: 'textures/project/memory.mp4',
-    logo: 'assets/project-logo3.png',
+    logo: 'assets/icons/mmlogo.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      background: 'black',
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
@@ -275,14 +274,14 @@ export const myProjects = [
   },
 ];
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
+export const calculateSizes = (isMini, isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall ? [3, -6, 1] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 2, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-22, 7, 0],
-    targetPosition: isSmall ? [-5, -10, -15] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+    deskPosition:  isMini ? [0.5, -4, 0]: isMobile ? [0.5, -3, 0] : [0.25, -5.5, 0],
+    cubePosition: isMini ? [3, -5, 1]: isSmall ? [3, -6, 1] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    reactLogoPosition: isMini ? [3, 3, 0]: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 2, 0],
+    ringPosition: isMini ? [-9, 9, 0]: isSmall ? [-6, 10, 3] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-22, 5, 0],
+    targetPosition: isSmall ? [-4, -10, -9] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
   };
 };
 

@@ -69,7 +69,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
+      <div className="relative min-h-screen flex items-center justify-center flex-col terminal_wrapper">
         <img
           src="assets/terminal.png"
           alt="terminal-bg"

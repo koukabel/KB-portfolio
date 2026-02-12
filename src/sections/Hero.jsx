@@ -15,12 +15,12 @@ import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
 
 const Hero = () => {
-  // Use media queries to determine screen size
+   const isMini = useMediaQuery({ maxWidth: 375 });
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const sizes = calculateSizes(isMini, isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">

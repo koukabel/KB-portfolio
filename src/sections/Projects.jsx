@@ -56,7 +56,7 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex items-center justify-around flex-wrap gap-7 mt-2">
-              <a
+            {/*  <a
                 className="flex items-center gap-2 cursor-pointer text-black-200 "
                 href={currentProject.liveSource}
                 target="_blank"
@@ -64,7 +64,7 @@ const Projects = () => {
                 <p className="text-green-700 font-semibold">Check Live Site</p>
 
                 <img src="assets/icons/arrowUp.png" alt="arrow" className="w-4 h-4 arrow_project" />
-              </a>
+              </a>  */}
               <a
                 className="flex items-center gap-2 cursor-pointer text-black-200 "
                 href={currentProject.sourceCode}

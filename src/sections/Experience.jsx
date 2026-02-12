@@ -15,7 +15,7 @@ const WorkExperience = () => {
 
               <Suspense fallback={<CanvasLoader />}>
                 <group rotation={[2, Math.PI, 3.1]}>
-                  <Developer position={[0, -1, 0]} scale={1.3} />
+                  <Developer position={[0.1, -1, -0.4]} scale={1.4} />
                 </group>
               </Suspense>
 
