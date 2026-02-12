@@ -1,18 +1,13 @@
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-
-import Developer from '../components/Developer.jsx';
-import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
 
 const WorkExperience = () => {
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-black-300">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text py-10">My Work Experience</p>
 
         <div className="work-container">
-          <div className="work-canvas">
+          {/* <div className="work-canvas">
             <Canvas camera={{ position: [0, 2, 5], fov: 35 }} className='khouloud-canvas'>
               <ambientLight intensity={1} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -26,7 +21,7 @@ const WorkExperience = () => {
 
               
             </Canvas>
-          </div>
+          </div> */}
 
           <div className="work-content ">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5 ">
